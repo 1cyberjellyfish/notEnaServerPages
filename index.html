@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Банан</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="pageTitle">Furry Not Server Ena - Docs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Банан!</h1>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/800px-Banana-Single.jpg" alt="Банан">
+
+    <div class="container">
+        <!-- =============== ЛЕВАЯ ПАНЕЛЬ (НАВИГАЦИЯ) =============== -->
+        <nav class="sidebar">
+            <h2 data-lang-key="sidebarTitle">Навигация</h2>
+            <ul>
+                <li><a href="#" data-lang-key="navNewbieGuide">Гайд для Новичков 101</a></li>
+                <li>
+                    <b data-lang-key="navBasicKnowledge">Базовые знания:</b>
+                    <ul>
+                        <li><a href="#" data-lang-key="navCreate101">Create 101</a></li>
+                        <li><a href="#" data-lang-key="navCreateBrave">Create для храбрых</a></li>
+                        <li><a href="#" data-lang-key="navSilentGear101">Silent Gear 101</a></li>
+                        <li><a href="#" data-lang-key="navSilentGearBrave">Silent Gear для храбрых</a></li>
+                        <li><a href="#" data-lang-key="navFirearms101">Огнестрельное оружие 101</a></li>
+                        <li><a href="#" data-lang-key="navBusiness101">Бизнес 101</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <b data-lang-key="navForLeaders">Для Лидеров:</b>
+                    <ul>
+                        <li><a href="#" data-lang-key="navFactionBasics">Основы ведения Фракции</a></li>
+                        <li><a href="#" data-lang-key="navBaseDefense">Основы обороны Базы</a></li>
+                        <li><a href="#" data-lang-key="navDiplomacy">Как вести дипломатию?</a></li>
+                        <li><a href="#" data-lang-key="navCityBuilding">Основы строительства Города</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <b data-lang-key="navForBuilders">Для градостроителей:</b>
+                    <ul>
+                        <li><a href="#" data-lang-key="navTrains101">Поезда 101</a></li>
+                        <li><a href="#" data-lang-key="navPowerGrid101">Электрическая Сеть 101</a></li>
+                        <li><a href="#" data-lang-key="navFactory101">Фабрика 101</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- =============== ОСНОВНОЙ КОНТЕНТ =============== -->
+        <main class="main-content">
+            <h1 data-lang-key="mainHeader">Furry Not Server Ena</h1>
+            <h2 data-lang-key="howToPlay">Как играть?</h2>
+            <p data-lang-key="introText">
+                Эта документация содержит множество помощи обычному игроку, она позволит освоиться 
+                <span class="accent-text" data-lang-key="textNewbie">Новичку</span>, и продвинуться дальше 
+                <span class="accent-text" data-lang-key="textAmateur">Любителю</span>, выберите статью:
+            </p>
+            
+            <h3><a href="#" data-lang-key="mainLinkNewbieGuide">Гайд для Новичков 101</a></h3>
+
+            <div class="divider"></div>
+
+            <h2 data-lang-key="sectionBasicKnowledge">Базовые знания:</h2>
+            <ul>
+                <li><a href="#" data-lang-key="linkCreate101">Create 101</a></li>
+                <li><a href="#" data-lang-key="linkCreateBrave">Create для храбрых</a></li>
+                <li><a href="#" data-lang-key="linkSilentGear101">Silent Gear 101</a></li>
+                <li><a href="#" data-lang-key="linkSilentGearBrave">Silent Gear для храбрых</a></li>
+                <li><a href="#" data-lang-key="linkFirearms101">Огнестрельное оружие 101</a></li>
+                <li><a href="#" data-lang-key="linkBusiness101">Бизнес 101</a></li>
+            </ul>
+
+            <h2 data-lang-key="sectionForLeaders">Для Лидеров</h2>
+            <ul>
+                <li><a href="#" data-lang-key="linkFactionBasics">Основы ведения Фракции</a></li>
+                <li><a href="#" data-lang-key="linkBaseDefense">Основы обороны вашей Базы</a></li>
+                <li><a href="#" data-lang-key="linkDiplomacy">Как вести дипломатию?</a></li>
+                <li><a href="#" data-lang-key="linkCityBuilding">Основы строительства Города</a></li>
+            </ul>
+
+            <h2 data-lang-key="sectionForBuilders">Для градостроителей:</h2>
+            <ul>
+                <li><a href="#" data-lang-key="linkTrains101">Поезда 101</a></li>
+                <li><a href="#" data-lang-key="linkPowerGrid101">Электрическая Сеть 101</a></li>
+                <li><a href="#" data-lang-key="linkFactory101">Фабрика 101</a></li>
+            </ul>
+
+        </main>
+    </div>
+
+    <!-- Подключение скрипта -->
+    <script src="script.js"></script>
 </body>
 </html>
