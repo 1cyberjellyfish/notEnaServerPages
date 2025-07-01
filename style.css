@@ -4,7 +4,7 @@
     --primary-text-color: #e0e0e0;
     --accent-color: #9b59b6;
     --accent-color-hover: #8e44ad;
-    --border-color: #444;
+    --border-color: #333;
 }
 
 * {
@@ -15,32 +15,33 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
     color: var(--primary-text-color);
     line-height: 1.6;
-    background-image: url('https://raw.githubusercontent.com/1cyberjellyfish/notEnaServerPages/main/main_background.png');
-    background-color: var(--bg-color);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .main-content {
     max-width: 900px;
-    margin: 40px auto;
-    padding: 40px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
-    background-color: rgba(18, 18, 18, 0.9);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.main-content h1 {
-    font-size: 4em;
+.hero-header {
+    background-image: url('https://raw.githubusercontent.com/1cyberjellyfish/notEnaServerPages/main/main_background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-header h1 {
+    font-size: 5em;
     font-weight: 900;
-    color: var(--accent-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
 }
 
 .main-content h2 {
