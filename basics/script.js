@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- TRANSLATION LOGIC (START) ---
     const translations = {
         pageTitle: {
             ru: 'Основы игры',
@@ -84,4 +85,25 @@ document.addEventListener('DOMContentLoaded', () => {
             elem.setAttribute('alt', translation);
         }
     });
+    // --- TRANSLATION LOGIC (END) ---
+
+
+    // --- LIGHTBOX LOGIC (START) ---
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = lightbox.querySelector('img');
+    const galleryImages = document.querySelectorAll('.image-gallery img');
+
+    galleryImages.forEach(image => {
+        image.addEventListener('click', () => {
+            lightboxImage.src = image.src;
+            lightbox.classList.add('active');
+        });
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImage) {
+            lightbox.classList.remove('active');
+        }
+    });
+    // --- LIGHTBOX LOGIC (END) ---
 });
