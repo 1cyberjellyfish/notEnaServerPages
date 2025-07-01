@@ -23,7 +23,7 @@ body {
 .hero-header {
     background-image: url('https://raw.githubusercontent.com/1cyberjellyfish/notEnaServerPages/main/main_background.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     padding: 100px 20px;
     margin-bottom: 40px;
     text-align: center;
