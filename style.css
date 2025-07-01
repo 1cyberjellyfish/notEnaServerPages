@@ -1,4 +1,3 @@
-/* Глобальные переменные и сброс стилей */
 :root {
     --bg-color: #121212;
     --surface-color: #1e1e1e;
@@ -21,12 +20,11 @@ body {
     line-height: 1.6;
 }
 
-/* Стили для основного контента */
 .main-content {
-    max-width: 900px; /* Ограничиваем ширину для читаемости */
-    margin: 0 auto; /* Центрируем блок на странице */
+    max-width: 900px;
+    margin: 0 auto;
     padding: 40px 20px;
-    text-align: center; /* Центрируем весь текст и заголовки по умолчанию */
+    text-align: center;
 }
 
 .main-content h1 {
@@ -44,10 +42,17 @@ body {
     padding-bottom: 10px;
 }
 
+.main-content h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 .main-content p {
     font-size: 1.1em;
-    max-width: 65ch; /* Ограничиваем длину строки */
-    margin-left: auto; /* Центрируем параграф */
+    max-width: 65ch;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -63,22 +68,19 @@ body {
     text-decoration: underline;
 }
 
-/* Контейнер для списков статей */
 .lists-container {
     margin-top: 30px;
 }
 
-/* Стили для заголовков над списками */
 .lists-container h2 {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Стили для самих списков */
 .lists-container ul {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none;
     padding: 0;
-    text-align: left; /* ВАЖНО: возвращаем выравнивание текста влево */
-    display: inline-block; /* Позволяет блоку с левым текстом быть внутри центрированного контейнера */
+    text-align: left;
+    display: inline-block;
     margin-bottom: 20px;
 }
 
