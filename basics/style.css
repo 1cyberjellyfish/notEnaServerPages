@@ -20,32 +20,39 @@ body {
     line-height: 1.6;
 }
 
-.main-content {
-    max-width: 1100px; /* Збільшено ширину сторінки з 900px */
-    margin: 40px auto;
-    padding: 30px 50px; /* Трохи збільшено відступи */
-    background-color: rgba(30, 30, 30, 0.9);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-}
-
-h1, h2 {
+.hero-header {
+    background-image: url('https://raw.githubusercontent.com/1cyberjellyfish/notEnaServerPages/main/main_background.png');
+    background-size: cover;
+    background-position: center bottom;
+    padding: 60px 20px;
+    margin-bottom: 40px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 2.8em; /* Трохи збільшено */
+.hero-header h1 {
+    font-size: 3em;
     font-weight: 900;
-    color: var(--accent-color);
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
 }
 
 h2 {
-    font-size: 2.2em; /* Трохи збільшено */
+    text-align: center;
+    font-size: 2.2em;
     font-weight: 700;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -67,16 +74,24 @@ i {
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Збільшено проміжок між картинками */
-    margin: 30px 0; /* Збільшено відступи */
-    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .image-gallery img {
-    max-width: 48%; /* Дозволяє двом картинкам комфортно розміститись в ряд */
-    height: auto; /* Зберігає пропорції, запобігає розтягуванню */
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.03);
 }
 
 .back-link {
@@ -94,4 +109,30 @@ i {
 
 .back-link:hover {
     background-color: var(--accent-color-hover);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 4px;
 }
