@@ -33,7 +33,7 @@ body {
     margin-bottom: 20px;
     padding: 10px 0;
     color: var(--accent-color);
-    background-image: url('main_background.png');
+    background-image: url('https://1cyberjellyfish.github.io/notEnaServerPages/main_background.png');
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
