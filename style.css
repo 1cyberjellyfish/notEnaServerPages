@@ -1,10 +1,10 @@
 /* Глобальные переменные и сброс стилей */
 :root {
-    --bg-color: #121212; /* Очень темный серый, почти черный */
-    --surface-color: #1e1e1e; /* Цвет панелей, чуть светлее фона */
-    --primary-text-color: #e0e0e0; /* Светло-серый текст */
-    --accent-color: #9b59b6; /* Фиолетовый акцент */
-    --accent-color-hover: #8e44ad; /* Фиолетовый при наведении */
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-text-color: #e0e0e0;
+    --accent-color: #9b59b6;
+    --accent-color-hover: #8e44ad;
     --border-color: #333;
 }
 
@@ -21,65 +21,12 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* Стили для левой панели */
-.sidebar {
-    width: 280px;
-    background-color: var(--surface-color);
-    padding: 25px;
-    border-right: 2px solid var(--accent-color);
-    flex-shrink: 0; /* Панель не будет сжиматься */
-}
-
-.sidebar h2 {
-    color: var(--accent-color);
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    font-weight: 900;
-}
-
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar li {
-    margin-bottom: 15px;
-}
-
-.sidebar b {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #f0f0f0;
-    font-weight: 700;
-}
-
-.sidebar ul ul {
-    margin-left: 20px;
-}
-
-.sidebar a {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    display: block;
-    padding: 5px 0;
-}
-
-.sidebar a:hover {
-    color: var(--accent-color-hover);
-}
-
 /* Стили для основного контента */
 .main-content {
-    flex-grow: 1; /* Занимает все оставшееся место */
-    padding: 40px 50px;
-    overflow-y: auto; /* Позволяет прокручивать контент, если он не влезает */
+    max-width: 900px; /* Ограничиваем ширину для читаемости */
+    margin: 0 auto; /* Центрируем блок на странице */
+    padding: 40px 20px;
+    text-align: center; /* Центрируем весь текст и заголовки по умолчанию */
 }
 
 .main-content h1 {
@@ -94,30 +41,14 @@ body {
     font-weight: 700;
     margin-top: 40px;
     margin-bottom: 15px;
-    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
-}
-
-.main-content h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .main-content p {
     font-size: 1.1em;
-    max-width: 80ch; /* Ограничение длины строки для лучшей читаемости */
-}
-
-.main-content ul {
-    list-style-position: inside;
-    padding-left: 5px;
-}
-
-.main-content li {
-    margin-bottom: 8px;
-    font-size: 1.1em;
+    max-width: 65ch; /* Ограничиваем длину строки */
+    margin-left: auto; /* Центрируем параграф */
+    margin-right: auto;
 }
 
 .main-content a {
@@ -132,6 +63,30 @@ body {
     text-decoration: underline;
 }
 
+/* Контейнер для списков статей */
+.lists-container {
+    margin-top: 30px;
+}
+
+/* Стили для заголовков над списками */
+.lists-container h2 {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Стили для самих списков */
+.lists-container ul {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+    text-align: left; /* ВАЖНО: возвращаем выравнивание текста влево */
+    display: inline-block; /* Позволяет блоку с левым текстом быть внутри центрированного контейнера */
+    margin-bottom: 20px;
+}
+
+.lists-container li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
 .accent-text {
     color: var(--accent-color);
     font-weight: bold;
@@ -140,5 +95,6 @@ body {
 .divider {
     height: 1px;
     background-color: var(--border-color);
-    margin: 40px 0;
+    max-width: 400px;
+    margin: 40px auto;
 }
