@@ -28,10 +28,17 @@ body {
 }
 
 .main-content h1 {
-    color: var(--accent-color);
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: var(--accent-color);
+    background-image: url('main_background.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .main-content h2 {
