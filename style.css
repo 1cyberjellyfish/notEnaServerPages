@@ -1,60 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-key="pageTitle">Furry Not Server Ena - Docs</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-text-color: #e0e0e0;
+    --accent-color: #9b59b6;
+    --accent-color-hover: #8e44ad;
+    --border-color: #333;
+}
 
-    <header class="hero-header">
-        <h1 data-lang-key="mainHeader">Furry Not Server Ena</h1>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main class="main-content">
-        <h2 data-lang-key="howToPlay">Как играть?</h2>
-        <p data-lang-key="introText">
-            Эта документация содержит множество помощи обычному игроку, она позволит освоиться 
-            <span class="accent-text">Новичку</span>, и продвинуться дальше 
-            <span class="accent-text">Любителю</span>, выберите статью:
-        </p>
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+}
 
-        <h3><a href="#" data-lang-key="mainLinkNewbieGuide">Гайд для Новичков 101</a></h3>
-        
-        <div class="divider"></div>
+.hero-header {
+    background-image: url('https://raw.githubusercontent.com/1cyberjellyfish/notEnaServerPages/main/main_background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
-        <div class="lists-container">
-            <h2 data-lang-key="sectionBasicKnowledge">Базовые знания:</h2>
-            <ul>
-                <li><a href="#" data-lang-key="linkCreate101">Create 101</a></li>
-                <li><a href="#" data-lang-key="linkCreateBrave">Create для храбрых</a></li>
-                <li><a href="#" data-lang-key="linkSilentGear101">Silent Gear 101</a></li>
-                <li><a href="#" data-lang-key="linkSilentGearBrave">Silent Gear для храбрых</a></li>
-                <li><a href="#" data-lang-key="linkFirearms101">Огнестрельное оружие 101</a></li>
-                <li><a href="#" data-lang-key="linkBusiness101">Бизнес 101</a></li>
-            </ul>
+.hero-header h1 {
+    font-size: 5em;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
 
-            <h2 data-lang-key="sectionForLeaders">Для Лидеров</h2>
-            <ul>
-                <li><a href="#" data-lang-key="linkFactionBasics">Основы ведения Фракции</a></li>
-                <li><a href="#" data-lang-key="linkBaseDefense">Основы обороны вашей Базы</a></li>
-                <li><a href="#" data-lang-key="linkDiplomacy">Как вести дипломатию?</a></li>
-                <li><a href="#" data-lang-key="linkCityBuilding">Основы строительства Города</a></li>
-            </ul>
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+}
 
-            <h2 data-lang-key="sectionForBuilders">Для градостроителей:</h2>
-            <ul>
-                <li><a href="#" data-lang-key="linkTrains101">Поезда 101</a></li>
-                <li><a href="#" data-lang-key="linkPowerGrid101">Электрическая Сеть 101</a></li>
-                <li><a href="#" data-lang-key="linkFactory101">Фабрика 101</a></li>
-            </ul>
-        </div>
-    </main>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+.main-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.main-content h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-content a:hover {
+    color: var(--accent-color-hover);
+    text-decoration: underline;
+}
+
+.lists-container {
+    margin-top: 30px;
+}
+
+.lists-container h2 {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lists-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.lists-container li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.accent-text {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    max-width: 400px;
+    margin: 40px auto;
+}
