@@ -117,17 +117,13 @@ body {
     color: var(--disabled-color);
     cursor: not-allowed;
     text-decoration: none;
-    pointer-events: none; /* Отключаем клики */
+    pointer-events: none;
 }
 
-.disabled-link:hover {
-    color: var(--disabled-color);
-    text-decoration: none;
-}
-
-.not-ready-text {
-    font-size: 0.8em;
-    font-style: italic;
+.disabled-link::after {
+    content: ' -X';
     color: #888;
+    font-style: italic;
+    font-size: 0.8em;
     margin-left: 8px;
 }
