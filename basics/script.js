@@ -7,9 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
             uk: 'Основи гри'
         },
         mainTitle: {
-            ru: 'Эта статья поможет новичку разобраться с базой игры на нашем сервере',
-            en: 'This article will help a newcomer to understand the basics of the game on our server',
-            uk: 'Ця стаття допоможе новачкові розібратися з базою гри на нашому сервері'
+            ru: 'Основы игры',
+            en: 'Game Basics',
+            uk: 'Основи гри'
+        },
+        introP: {
+            ru: 'Эта статья поможет новичку разобраться с базой игры на нашем сервере.',
+            en: 'This article will help a newcomer to understand the basics of the game on our server.',
+            uk: 'Ця стаття допоможе новачкові розібратися з базою гри на нашому сервері.'
         },
         interfaceTitle: {
             ru: 'Интерфейс:',
