@@ -72,6 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         linkFactory101: {
             en: 'Factory 101', ru: 'Фабрика 101', uk: 'Фабрика 101'
+        },
+        notReady: {
+            ru: '(не готово)',
+            en: '(not ready)',
+            uk: '(не готово)'
         }
     };
 
@@ -89,5 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 elem.textContent = translation;
             }
         }
+    });
+
+    // Добавляем текст для неактивных ссылок
+    document.querySelectorAll('.disabled-link').forEach(elem => {
+        const notReadyText = translations.notReady[lang] || translations.notReady.en;
+        elem.insertAdjacentHTML('beforeend', `<span class="not-ready-text">${notReadyText}</span>`);
     });
 });
