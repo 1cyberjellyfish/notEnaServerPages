@@ -1,1 +1,76 @@
-meow
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="pageTitle">Create 101</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-header">
+        <h1 data-lang-key="mainTitle">Create 101</h1>
+    </header>
+
+    <main class="main-content">
+        <p class="intro-paragraph" data-lang-key="introP">
+            Эта статья поможет новичку разобраться с основами Create.
+        </p>
+
+        <h2 data-lang-key="speedAndStressTitle">Скорость и Стресс</h2>
+        <p data-lang-key="speedAndStressP1">
+            Наверное за это время вы захотели сделать свою <span class="accent-text">Мельницу</span> что-бы продуктивнее делать <span class="accent-text">Хлеб</span>, не так ли?
+            Эта статья поможет с этим!
+        </p>
+        <p data-lang-key="speedAndStressP2">
+            В Create есть система оборотов, мощности, и скорости, скорость измеряется в Оборотах в Минуту (<span class="accent-text">RPM</span>), а мощность в Юнитах Стресса(<span class="accent-text">SU</span>).
+            Пусть мы и можем просто передавать обороты через прямые палки под названием <span class="accent-text">Вал</span>, но нам ведь хочется использовать нашу мельницу эффективнее, не так ли?
+            Для этого нам надо разобраться с <span class="accent-text">Шестернями</span>...
+        </p>
+        <p data-lang-key="speedAndStressP3">
+            Есть 2 вида шестерней, <span class="large-text">Большая</span> и <span class="small-text">маленькая</span>, и что же произойдёт если мы их совместим? Соотношений Передач!(<span class="accent-text">Ratio</span>)
+            Две шестерни что совмещены друг с другом имеют соотношение оборотов 1:2.
+            Это значит что если мы введём 1 RPM на большую шестерню - мы способны вывести 2 RPM из маленькой, и наоборот, но при этом, обороты реверсируются!
+        </p>
+        <div class="image-gallery">
+            <img src="cogs-ratio.png" alt="Соотношение шестерней" data-lang-key-alt="altCogsRatio">
+        </div>
+        <p data-lang-key="speedAndStressP4">
+            Но не бывает ведь бесплатной энергии, не так ли?
+            Когда мы увеличиваем обороты, каждый механизм что потребляет их - начинает есть больше <span class="accent-text">SU</span>, и если наш источник не способен выдать достаточно <span class="accent-text">SU</span>, случится <span class="accent-text">ПЕРЕГРУЗ</span>.
+        </p>
+
+        <h2 data-lang-key="sourcesAndConsumersTitle">Источники и потребители</h2>
+        <p data-lang-key="sourcesAndConsumersP1">
+            Но как же нам это использовать? Откуда брать обороты? Куда их выводить?
+        </p>
+        <p data-lang-key="sourcesAndConsumersP2">
+            В Create есть множество <span class="accent-text">Источников</span> и <span class="accent-text">Потребителей</span> оборотов и стресса, но в этом случае мы рассмотрим лишь 2:
+            <span class="accent-text">Водяная Мельница</span> и <span class="accent-text">Жернов</span>.
+        </p>
+        <p data-lang-key="sourcesAndConsumersP3">
+            У водяной мельницы есть вал что подобен валу у шестерни, и если мы добавим текущую в одну сторону воду вокруг водяной мельницы, она начнёт вращаться!
+            Если мы добавим к нашем конструкции <span class="large-text">Больших</span> и <span class="small-text">Маленьких</span> шестерней, что по цепочке идут по увеличению соотношения, мы создаём огромное число соотношения.
+            И куда же нам использовать все эти <span class="accent-text">RPM</span> и <span class="accent-text">SU</span>? Естественно в наши жернова! Просто подключите его так-же как и шестерню, к другой шестерне, и мы получим что-то на подобии этого...
+        </p>
+        <div class="image-gallery">
+            <img src="mill.png" alt="Работающая мельница" data-lang-key-alt="altMill">
+        </div>
+        <p data-lang-key="sourcesAndConsumersP4">
+            После этого вы можете вручную ложить и вытаскивать ресурсы в и из <span class="accent-text">Жернова</span>, или же добавить несколько воронок, прямо как в ванильном майнкрафте.
+        </p>
+        <p data-lang-key="outroP">
+            После этой статьи советую ознакомиться с остальными статьями 101.
+        </p>
+        <a href="../index.html" class="back-link" data-lang-key="backLink">Вернуться на главную</a>
+    </main>
+
+    <div class="lightbox">
+        <img src="" alt="Zoomed image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
