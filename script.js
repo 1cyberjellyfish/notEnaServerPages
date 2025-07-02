@@ -40,12 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         linkCreateBrave: {
             en: 'Create for the Brave', ru: 'Create для храбрых', uk: 'Create для хоробрих'
         },
-        linkSilentGear101: {
-            en: 'Silent Gear 101', ru: 'Silent Gear 101', uk: 'Silent Gear 101'
-        },
-        linkSilentGearBrave: {
-            en: 'Silent Gear for the Brave', ru: 'Silent Gear для храбрых', uk: 'Silent Gear для хоробрих'
-        },
         linkFirearms101: {
             en: 'Firearms 101', ru: 'Огнестрельное оружие 101', uk: 'Вогнепальна зброя 101'
         },
@@ -72,11 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         linkFactory101: {
             en: 'Factory 101', ru: 'Фабрика 101', uk: 'Фабрика 101'
-        },
-        notReady: {
-            ru: '(не готово)',
-            en: '(not ready)',
-            uk: '(не готово)'
         }
     };
 
@@ -94,11 +83,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 elem.textContent = translation;
             }
         }
-    });
-
-    // Добавляем текст для неактивных ссылок
-    document.querySelectorAll('.disabled-link').forEach(elem => {
-        const notReadyText = translations.notReady[lang] || translations.notReady.en;
-        elem.insertAdjacentHTML('beforeend', `<span class="not-ready-text">${notReadyText}</span>`);
     });
 });
